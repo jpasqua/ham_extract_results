@@ -12,10 +12,18 @@ This tool supports:
 - concatenated multi-exam PDFs (multiple exams in one file)
 - multiple input files in one run
 
+*NOTE: This tool has only been tested on macOS as of 2026-02-21*
+
 ## Requirements
 
 - Python 3.10+ (tested with Python 3)
 - [Ghostscript](https://www.ghostscript.com/) available in `PATH` as `gs` (required for PDF input)
+
+Ghostscript install examples:
+
+- macOS (Homebrew): `brew install ghostscript`
+- Ubuntu/Debian: `sudo apt-get install ghostscript`
+- Windows (winget): `winget install ArtifexSoftware.Ghostscript`
 
 ## Installation
 
