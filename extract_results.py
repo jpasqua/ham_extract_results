@@ -4,7 +4,8 @@
 Overview
 --------
 This script converts one or more exam result documents into machine-readable
-JSON and optional CSV files. It is designed for exam result sheets that contain:
+JSON and optional CSV files. It is designed for PDF files from examtools.org
+Those files contain:
 
 1) Header metadata (candidate identity, pass/fail outcome, element/test info).
 2) One or two columns of question rows such as:
@@ -39,7 +40,7 @@ Output model
 ------------
 - Single input file:
   - Returns that file's parsed structure (single exam, or `exams` for
-    concatenated files).
+    multiple exams for the same applicant).
 - Multiple input files:
   - Returns one aggregate object with:
     - `sources`
