@@ -12,7 +12,7 @@ This tool supports:
 - concatenated multi-exam PDFs (multiple exams in one file)
 - multiple input files in one run
 
-*NOTE: This tool has only been tested on macOS as of 2026-02-21*
+**NOTE**: This tool has only been tested on macOS as of 2026-02-21
 
 ## Requirements
 
@@ -30,7 +30,7 @@ Ghostscript install examples:
 No package install is required.
 
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/jpasqua/ham_extract_results
 cd extract_results
 python3 -m py_compile extract_results.py
 ```
@@ -118,6 +118,26 @@ Output is aggregated into one JSON object with:
 - `section_stats`
 - `subsection_stats`
 - `results` (full parsed output per source file)
+
+Here is a snipet of the output JSON file showing a couple of the questions encountered:
+
+```json
+  "questions": [
+    {
+      "number": 1,
+      "question_id": "T7A05",
+      "selected": "D",
+      "correct": "D",
+      "is_correct": true
+    },
+    {
+      "number": 2,
+      "question_id": "T4A07",
+      "selected": "C",
+      "correct": "C",
+      "is_correct": true
+    },
+```
 
 ## CSV Outputs
 
